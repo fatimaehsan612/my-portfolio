@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IF-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/df4ee80984.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo">Fatima.</div>
+            <ul id="sidemenu">
+                <li><a href= "#header">Home</a></li>
+                <li><a href= "#about">About</a></li>
+                <li><a href= "#services">Services</a></li>
+                <li><a href= "#portfolio">Portfolio</a></li>
+                <li><a href= "#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <br><br>
+        <div class="header-text">
+            <p>THIS IS ME</p>
+            <h1>Computer Engineer<br> Fatima Ehsan.</h1>
+            <br>
+            <div class="underline"></div>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br>
+                <p> I am a 21-year-old computer engineering student at Information Technology University (ITU) Lahore, 
+                    recently having completed my third year. I am passionate about learning new and emerging technologies
+                    and staying updated on developments in the tech world. My areas of expertise include embedded systems,
+                    signal processing, Operating Systems, machine learning, and various programming languages. Additionally, 
+                    work part-time as a freelancer on Fiverr, specializing in the signal processing domain.
+                </p>
+                <br>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('other')">Other</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>C/C++, Python</li>
+                        <li><span>Embedded Systems</span><br>Arduino, ESP32, STM Series</li>
+                        <li><span>Signal Processing</span><br>MATLAB, DSP, Control Systems</li>
+                        <li><span>Machine Learning</span><br>Deep Learning, AI</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Freelancer at Fiverr</li>
+                        <li><span>July 2024 - Current</span><br>ML Intern at Ebryx. Lahore.</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>BSCE from ITU Lahore. (CGPA: 3.27) </li>
+                        <li><span>2021</span><br>ICS from Unique Girls High College, Lahore. (Grade: A+)</li>
+                        <li><span>2019</span><br>Matric from Unique Girls High School, Lahore. (Grade: A+)</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="other">
+                    <ul>
+                        <li><span>2023</span><br>General Secretary at IET on Campus ITU. </li>
+                        <li><span>2024</span><br>Confiniti campus lead at ITU.</li>
+                        <li><span>2023</span><br>Devsinc campus ambassador.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-wave-square"></i>
+            <br><br><h2>MATLAB Programming</h2>
+            <p>I can do MATLAB programming. My area of expertise include c coding for 
+                signal processing, digital signals, and control systems.
+            </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-microchip"></i>
+            <br><br><h2>Embedded Systems</h2>
+            <p>I can do programming of various microcontrollers including<br> 
+                Arduino, ESP32 (Arduino IDE), STM Series (STM32CubeIDE).
+            </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-terminal"></i>
+            <br><br><h2>C/C++ Programming</h2>
+            <p>I have high expertise in domains like Computing Fundamentals, Object Oriented Programming (OOP), 
+                and Data Structures and Algorithms (DSA).
+            </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-python"></i>
+            <br><br><h2>Python (Machine Learning)</h2>
+            <p>I can design and train multiple ML/deep learning models on various IDEs.
+            </p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!-----------Portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Hand Gestured Controlled Car</h3>
+                    <p>This car is controlled by STM32 IoT Discovery Kit (one on the car and other on the user's hand), 
+                        and  uses technologies like BLE, and gyroscope. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Hotel Reservation System using C++</h3>
+                    <p>This is a terminal based system that allows to reserve
+                        the hotel room and contains all the necessary features. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">    
+                <div class="layer">
+                    <h3>Signal Denoising and Filteration</h3>
+                    <p>This code is implemented in MATLAB, takes audio as input and performs all 
+                        the required tasks such as denoising, filtering, fourier transforms etc.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>   
+            </div>
+        </div>
+        <a href="#" class="button">See more</a>
+    </div>
+</div>
+
+<!--------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> fatimaehsan001@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (+92) 322 4380383</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/fatimaehsan.612"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/fatimaehsan612/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/fatima-ehsan-76bb5526b"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Fatima Ehsan_Computer Engineer_Resume.pdf" download class="button button2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button button2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Fatima. All rights reserved.</p>
+    </div> 
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyrbcpr4Fx3elyWiVMF6NiiPNEAPvXIi1FI4p39kAdMJjg7zK0R4kIF_xi-xHSBKTWM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!";
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</script>
+</body>
+</html>
